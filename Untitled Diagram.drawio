@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-28T12:10:49.010Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="Xhi3qasqCjFMqNKLBpG8" version="14.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-28T12:27:53.849Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="yblWRVbiZX41UBQwp_5R" version="14.5.3" type="github">
   <diagram id="_sDrlx2WprYwcq8Zyy-y" name="Page-1">
     <mxGraphModel dx="786" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -161,14 +161,17 @@
         <mxCell id="dlLclcVYFJT6eP5b9gjO-101" value="数据存储层" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#0B66FE;" parent="1" vertex="1">
           <mxGeometry x="160" y="710" width="480" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="dlLclcVYFJT6eP5b9gjO-166" value="(mysql)&lt;br&gt;业务库" style="whiteSpace=wrap;html=1;fillColor=#245DAA;" parent="dlLclcVYFJT6eP5b9gjO-101" vertex="1">
-          <mxGeometry x="160" y="10" width="90" height="100" as="geometry" />
+        <mxCell id="KCF3iiigpCkxFRNrBrmr-1" value="&lt;span&gt;(hive、imp)&lt;/span&gt;&lt;br&gt;&lt;span&gt;数据仓库&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.table;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="dlLclcVYFJT6eP5b9gjO-101">
+          <mxGeometry x="50" y="10" width="67.5" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="dlLclcVYFJT6eP5b9gjO-167" value="(es、redis)&lt;br&gt;缓存" style="whiteSpace=wrap;html=1;fillColor=#245DAA;" parent="dlLclcVYFJT6eP5b9gjO-101" vertex="1">
-          <mxGeometry x="270" y="10" width="90" height="100" as="geometry" />
+        <mxCell id="KCF3iiigpCkxFRNrBrmr-2" value="&lt;span&gt;(mysql)&lt;/span&gt;&lt;br&gt;&lt;span&gt;业务库&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.mysql_db_instance;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="dlLclcVYFJT6eP5b9gjO-101">
+          <mxGeometry x="160" y="10" width="60" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="dlLclcVYFJT6eP5b9gjO-168" value="(ufile、S3)&lt;br&gt;文件存储" style="whiteSpace=wrap;html=1;fillColor=#245DAA;" parent="dlLclcVYFJT6eP5b9gjO-101" vertex="1">
-          <mxGeometry x="380" y="10" width="90" height="100" as="geometry" />
+        <mxCell id="KCF3iiigpCkxFRNrBrmr-3" value="&lt;span&gt;(es、redis)&lt;/span&gt;&lt;br&gt;&lt;span&gt;缓存&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cache_node;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="dlLclcVYFJT6eP5b9gjO-101">
+          <mxGeometry x="270" y="10" width="60" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="KCF3iiigpCkxFRNrBrmr-4" value="&lt;span&gt;(ufile、S3)&lt;/span&gt;&lt;br&gt;&lt;span&gt;文件存储&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.attributes;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="dlLclcVYFJT6eP5b9gjO-101">
+          <mxGeometry x="380" y="8.5" width="63" height="66" as="geometry" />
         </mxCell>
         <mxCell id="dlLclcVYFJT6eP5b9gjO-120" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="dlLclcVYFJT6eP5b9gjO-107" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -237,9 +240,6 @@
             <mxPoint x="350" y="560" as="sourcePoint" />
             <mxPoint x="494" y="600" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="dlLclcVYFJT6eP5b9gjO-165" value="(hive、imp)&lt;br&gt;数据仓库" style="whiteSpace=wrap;html=1;fillColor=#245DAA;" parent="1" vertex="1">
-          <mxGeometry x="200" y="720" width="90" height="100" as="geometry" />
         </mxCell>
         <mxCell id="dlLclcVYFJT6eP5b9gjO-178" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="dlLclcVYFJT6eP5b9gjO-174" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
